@@ -1,6 +1,5 @@
 const axios = require('axios');
 
-
 const getLugarLatLng = async( dir ) => {
 
     const encodedUlr = encodeURI( dir );
@@ -21,14 +20,12 @@ const getLugarLatLng = async( dir ) => {
     const lat       = data.lat; 
     const lng       = data.lon; 
 
-
     return {
         direccion,
         lat,
         lng
     }
 }
-
 
 module.exports = {
     getLugarLatLng

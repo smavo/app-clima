@@ -5,7 +5,6 @@ const getClima = async ( lat, lng ) => {
     return resp.data.main.temp;
 }
 
-
 module.exports = {
     getClima
 }
